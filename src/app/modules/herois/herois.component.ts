@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Heroi } from './shared/heroi.model';
 import { HeroisService } from './shared/services/herois.service';
 
 @Component({
@@ -21,12 +22,3 @@ export class HeroisComponent implements OnInit {
 
 }
 
-export class Heroi{
-
-  forca: Number;
-  id: Number;
-  idade: Number;
-  nome: string;
-
-  constructor(){}
-}
