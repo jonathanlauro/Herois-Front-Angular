@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HeroisRoutingModule } from './herois-routing.module';
 import { HeroisComponent } from './herois.component';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeroisRoutingModule,
     FormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class HeroisModule { }

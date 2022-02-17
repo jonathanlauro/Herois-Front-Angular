@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Heroi } from '../../herois.component';
+import { Heroi } from '../model/heroi.model';
 
 @Injectable({
   providedIn: 'root'

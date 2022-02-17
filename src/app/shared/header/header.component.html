@@ -1,0 +1,28 @@
+<mat-toolbar class="header">
+    <span>Heróis</span>
+    <div *ngIf="tipoPersonagem == 'heroi'; then herois; else viloes">
+
+    </div>
+</mat-toolbar>
+
+<ng-template #herois>
+    <div class="navbar">
+
+        <ul>
+            <li>Sobre Herois</li>
+            <li>Herois Comicos</li>
+            <li>Herois do mal</li>
+            <li>Seja um herói</li>
+        </ul>
+    </div>
+
+</ng-template>
+
+<ng-template class="navbar" #violoes>
+    <ul>
+        <li>Sobre Violões</li>
+        <li>Violões comicos</li>
+        <li>Violões raiz</li>
+        <li>Seja um Violão</li>
+    </ul>
+</ng-template>
